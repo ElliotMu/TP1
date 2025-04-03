@@ -5,7 +5,7 @@ Ici, elle affiche qu'il n'y a aucun commit, et me propose d'ajouter avec git add
 
 2)Maintenant, la branche develop peut, après validation contenir le fichier reponses.txt.
 
-3)Ils sont partis dans la branche develop.
+3)Ils sont partis dans la staging area .
 
 4)git commit -m Salut
 

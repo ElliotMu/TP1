@@ -1,0 +1,12 @@
+--Elliot Musart
+
+1)La commande Git Status affiche l'état actuel du répertoire de travail et de l'index.
+Ici, elle affiche qu'il n'y a aucun commit, et me propose d'ajouter avec git add le fichier readme.
+
+2)Maintenant, la branche develop peut, après validation contenir le fichier reponses.txt.
+
+3)Ils sont partis dans la branche develop.
+
+4)git commit -m Salut
+
+5)git log

@@ -10,3 +10,31 @@ Ici, elle affiche qu'il n'y a aucun commit, et me propose d'ajouter avec git add
 4)git commit -m Salut
 
 5)git log
+
+6)git diff compare les fichiers modifiés mais pas encore ajoutés à l'index,
+tandis que git diff --staged compare les fichiers indexés par git add, mais pas encore committés
+
+7)git show 64b7e73d6869e16a7432826faed706588309f28c
+j'obtiens: 
+"commit 64b7e73d6869e16a7432826faed706588309f28c (HEAD -> develop)
+Author: Elliot Musart~ <elliotmusart@gmail.com>
+Date:   Thu Apr 3 13:27:47 2025 +0200
+
+    suppression_ligne2
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..a1e54e7
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,2 @@
++# TP1 Git - Musart_Elliot
++#Ajout d'une deuxième ligne"
+
+Git show affiche les details d un commit specifique,
+git status affiche les fichiers modifiés, en attente d'être ajoutés et ceux en attente de commit,
+git diff affiche les modifications entre deux versions d'un commit,
+git log affiche les differents commits, avec des informations comme l'auteur, la date, le message.
+
+
+8)

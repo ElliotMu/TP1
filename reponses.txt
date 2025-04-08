@@ -38,3 +38,44 @@ git log affiche les differents commits, avec des informations comme l'auteur, la
 
 
 8)
+Sur la branche develop
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+	nouveau fichier : brouillon.txt
+	nouveau fichier : fichier1.txt
+	
+9)Oui, l'annulation a bien marchée. Cette commande pemet de retirer un fichier en attente de commit.
+La commande agit sur la staging area.
+
+10)J'effectue un git status, je vois qu'il n'est plus en attente de commit.
+ J'effectue ensuite git log brouillon. txt pour verifier si il a été commit. 
+ Rien ne s'affiche, donc il n'a pas été commit.
+ 
+ Après le commit du fichier1, lorsque je fais git log ficher1.txt, le commit apparait.
+ 
+ 
+ 11)J'ai fait un git status pour vérifier les fichiers en attente de commit, puis j'ai fait unr git show pour chaque commit
+ 
+ 12)git log origin/develop
+ 
+ 13)git clone https://github.com/PaulineLam24/TP-Git.git
+ 
+ 14)On y trouve un dossier TP-Git avec un README.md dedans.
+ On y trouve les commits:
+ -Correctif README.md
+    Modification sur la deuxième ligne du fichier README.md pour que celle-ci s'affiche comme du texte et non un titre.
+-Ajout dans README.md
+    Ajout d'une 2e ligne dans le fichier README.md.
+-Initial commit
+
+15)Entre le 1er et le 2 eme:
+git diff 9b68886bc99182ad4da6d6cf861bb29e7d1c507e f7a7e75421eb00b9ce12ef0bb0dfd3f61f00e471
+
+On trouve que la ligne # TP-Git a été supprimée et que #TP-Git et#Ceci est un fichier README.md... ont été rajoutées.
+
+Entre le 2eme et le 3eme: 
+git diff f7a7e75421eb00b9ce12ef0bb0dfd3f61f00e471 f8138d708175c280ece259c616cdd222ff18a1c3
+
+La ligne #Ceci est un fichier README.md est supprimée, et la ligne Ceci est un fichier README.md... est rajoutée.
+ 
+
